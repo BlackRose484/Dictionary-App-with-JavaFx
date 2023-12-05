@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="bkg_game" prefHeight="640.0" prefWidth="960.0" stylesheets="@css/game.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dictionaryofficial.GameController">
+   <children>
+      <AnchorPane fx:id="gamepane" layoutX="57.0" layoutY="14.0" prefHeight="506.0" prefWidth="834.0" style="-fx-background-color: FFEBD8; -fx-background-radius: 30;">
+         <children>
+            <Label fx:id="notification" layoutX="51.0" layoutY="476.0" prefHeight="18.0" prefWidth="678.0" style="-fx-background-color: none;" />
+            <Label alignment="CENTER" layoutX="51.0" layoutY="14.0" prefHeight="70.0" prefWidth="743.0" style="-fx-background-color: C7DCA7; -fx-background-radius: 30;" text="STUDY SMART - PLAY HARD" textFill="#656e1b">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="flash_card" layoutX="115.0" layoutY="173.0" mnemonicParsing="false" onAction="#PlayFlashCard" prefHeight="79.0" prefWidth="616.0" stylesheets="@css/button.css" text="Flash Card" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font></Button>
+            <Button fx:id="frog" layoutX="115.0" layoutY="275.0" mnemonicParsing="false" onAction="#PlayBlossomGame" prefHeight="79.0" prefWidth="616.0" stylesheets="@css/button.css" text="Frog Game" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font></Button>
+            <Button fx:id="multi" layoutX="115.0" layoutY="384.0" mnemonicParsing="false" onAction="#PlayMultiChoiceGame" prefHeight="79.0" prefWidth="616.0" stylesheets="@css/button.css" text="Multiple Choice" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+      <Label fx:id="taskbar" layoutX="255.0" layoutY="551.0" prefHeight="70.0" prefWidth="493.0" stylesheets="@css/intoprogram.css" />
+      <Button fx:id="setting_button" layoutX="656.0" layoutY="561.0" mnemonicParsing="false" onAction="#showSettingScene" prefHeight="50.0" prefWidth="50.0" stylesheets="@css/button.css" />
+      <Button fx:id="edit_button" layoutX="411.0" layoutY="561.0" mnemonicParsing="false" onAction="#showAddScene" prefHeight="50.0" prefWidth="50.0" stylesheets="@css/button.css" />
+      <Button fx:id="game_button" layoutX="492.0" layoutY="561.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@css/button.css" />
+      <Button fx:id="search_button" layoutX="317.0" layoutY="564.0" mnemonicParsing="false" onAction="#showSearchScene" prefHeight="50.0" prefWidth="50.0" stylesheets="@css/button.css" />
+      <Button fx:id="translate_button" layoutX="573.0" layoutY="561.0" mnemonicParsing="false" onAction="#showTranslateScene" prefHeight="50.0" prefWidth="50.0" stylesheets="@css/button.css" />
+      <Label fx:id="search_label" layoutX="318.0" layoutY="531.0" prefHeight="18.0" prefWidth="60.0" text="Search" textFill="#040505">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="edit_label" layoutX="411.0" layoutY="531.0" prefHeight="27.0" prefWidth="38.0" text="Add" textFill="#040505">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="studying_label" layoutX="480.0" layoutY="530.0" prefHeight="27.0" prefWidth="72.0" text="Studying" textFill="#040505">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="gg_label" layoutX="529.0" layoutY="530.0" prefHeight="27.0" prefWidth="137.0" text="Google Translate" textFill="#040505">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="setting_label" layoutX="656.0" layoutY="531.0" prefHeight="27.0" prefWidth="72.0" text="Setting" textFill="#040505">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img_3" fitHeight="70.0" fitWidth="70.0" layoutX="282.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/answers.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img_2" fitHeight="70.0" fitWidth="70.0" layoutX="283.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/frog%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img_1" fitHeight="70.0" fitWidth="70.0" layoutX="282.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/flash-card.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="167.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/game%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="711.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/game%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
